@@ -2,7 +2,7 @@
 NCAA March Madness Basketball Data
 
 Men's Tournament data for 2001-2024 (excluding 2020).
-Women's Tournament data (coming soon)
+Women's Tournament data for 2001-2024 (excluding 2020).
 
 ## The Data
 Data was collected from
@@ -39,6 +39,16 @@ Here are some of the predictor variables:
 -   fg_pct, fg3_pct, ft_pct: Field Goals (2 points), 3-Point Field
     Goals, Free Throw (1 point) percentages. Number scored divided by
     number attempted.
+-   ts_pct: True shooting percentage. A measure of shooting efficiency
+    that takes into account 2-point field goals, 3-point field goals, and free throws.
+-   trb_pct: Total Rebound Percentage. An estimate of the percentage of available rebounds a player grabbed while they were on the floor.
+-   ast_pct: An estimate of the percentage of the teams field goals that a player assisted.
+-   stl_pct: Steal Percentage. An estimate of the percentage of opponent possessions that end with a steal.
+-   blk_pct: Block Percentage. An estimate of the percentage of opponent two-point field goal attempts blocked.
+-   efg_pct: Effective Field Goal Percentage; this statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+-   tov_pct: Turnover Percentage; an estimate of turnovers per 100 plays.
+-   orb_pct: Offensive Rebound Percentage; an estimate of the percentage of available offensive rebounds.
+-   ft_rate: Free Throws Made Per Field Goal Attempt
 -   \*\_pg: Counting Stats per Game, including field goals (fg), 3-Point
     Field Goals (fg3), Free Throw (ft), offensive rebounds (orb), total
     rebounds (trb), assists (ast), steals (stl), blocks (blk), turnovers
@@ -62,4 +72,4 @@ the data towards team 1 winning (typically the better seed was listed
 first as team 1 in the early rounds of the bracket) and to make your
 classifiers robust to the order of the teams (you wouldn't want to model
 to produce different predictions based on which team was listed as team
-1).
+1). Just be aware that doing this will underestimate the uncertainty in the parameter estimates.

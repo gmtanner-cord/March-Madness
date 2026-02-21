@@ -1,8 +1,8 @@
 # March-Madness
 NCAA March Madness Basketball Data
 
-Men's Tournament data for 2001-2024 (excluding 2020).
-Women's Tournament data for 2001-2024 (excluding 2020).
+-  Men's Tournament data for 2001-2025 (excluding 2020).
+-  Women's Tournament data for 2001-2025 (excluding 2020).
 
 ## The Data
 Data was collected from
